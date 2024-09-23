@@ -3,4 +3,4 @@ locations:
     code_source:
       package_name: quickstart_etl
     build:
-      directory: ./dagster
+      directory: my_dagster_project
