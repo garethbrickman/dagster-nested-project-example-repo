@@ -1,16 +1,12 @@
-from pathlib import Path
-
 from dagster import (
     Definitions,
     ScheduleDefinition,
     define_asset_job,
     graph_asset,
-    link_code_references_to_git,
     load_assets_from_package_module,
     op,
     with_source_code_references,
 )
-from dagster._core.definitions.metadata.source_code import AnchorBasedFilePathMapping
 
 from . import assets
 
@@ -36,14 +32,8 @@ my_assets = with_source_code_references(
     ]
 )
 
-my_assets = link_code_references_to_git(
-    assets_defs=my_assets,
-    git_url="https://github.com/dagster-io/dagster/",
-    git_branch="master",
-    file_path_mapping=AnchorBasedFilePathMapping(
-        local_file_anchor=Path(__file__).parent,
-        file_anchor_path_in_repository="examples/quickstart_etl/quickstart_etl/",
-    ),
+defs = Definitions(
+    assets=load_assets_from_package_module(assets), schedules=[daily_refresh_schedule]
 )
 
 defs = Definitions(
