@@ -1,0 +1,4 @@
+load_from:
+  - python_package:
+      location_name: qa-deployment-code-location
+      package_name: quickstart_etl
