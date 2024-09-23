@@ -1,0 +1,6 @@
+locations:
+  - location_name: qa-deployment-code-location
+    code_source:
+      package_name: quickstart_etl
+    build:
+      directory: ./dagster
