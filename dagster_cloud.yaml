@@ -3,4 +3,4 @@ locations:
     code_source:
       package_name: ndr-dagster
     build:
-      directory: ./ndr-dagster
+      directory: ndr-dagster
