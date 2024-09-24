@@ -1,4 +1,0 @@
-load_from:
-  - python_package:
-      location_name: my_dagster_project
-      package_name: quickstart_etl

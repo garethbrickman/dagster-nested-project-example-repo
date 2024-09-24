@@ -1,5 +1,5 @@
 locations:
-  - location_name: my_dagster_project
+  - location_name: ndr
     code_source:
-      package_name: quickstart_etl
-    working_directory: ./my_dagster_project
+      package_name: ndr
+    working_directory: ./dagster_project

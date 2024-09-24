@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name="quickstart_etl",
+    name="ndr",
     packages=find_packages(exclude=["quickstart_etl_tests"]),
     install_requires=[
         "dagster",
