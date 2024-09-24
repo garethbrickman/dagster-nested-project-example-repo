@@ -1,8 +1,8 @@
 from setuptools import find_packages, setup
 
 setup(
-    name="ndr",
-    packages=find_packages(exclude=["quickstart_etl_tests"]),
+    name="ndr-dagster",
+    packages=find_packages(),
     install_requires=[
         "dagster",
         "dagster-cloud",

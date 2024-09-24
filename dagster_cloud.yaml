@@ -1,5 +1,0 @@
-locations:
-  - location_name: ndr
-    code_source:
-      package_name: ndr
-    working_directory: ./dagster_project

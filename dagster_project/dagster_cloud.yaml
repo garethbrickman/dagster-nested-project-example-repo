@@ -1,0 +1,4 @@
+locations:
+  - location_name: ndr-dagster
+    code_source:
+      package_name: ndr-dagster
