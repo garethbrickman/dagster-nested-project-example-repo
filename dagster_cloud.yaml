@@ -2,4 +2,5 @@ locations:
   - location_name: ndr-dagster
     code_source:
       package_name: ndr-dagster
-    working_directory: ./ndr-dagster
+    build:
+      directory: ./ndr-dagster
